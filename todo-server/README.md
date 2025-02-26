@@ -1,0 +1,30 @@
+# TODO-SERVER
+
+## 강의
+https://skillflo.io/classroom/17560/10478/content/60108
+
+## 개요
+- Todo API 어플리케이션
+- 사용자가 할 일을 관리할 수 있는 어플리케이션 서버 개발
+
+## 기술 스택
+- Spring Boot (JAVA)
+- H2 Database
+- Git
+
+## 필요 기능
+- 할 일 CRUD
+- 할 일의 완료 상태 표시 및 변경
+
+## Task Table
+![image.png](img/table.png)
+
+## API Endpoint 설계
+- 요청과 응답은 JSON 형식
+- 표준 HTTP 상태 코드로 성공, 실패, 오류 표시
+
+## API Endpoint - 할 일 관리
+![image.png](img/endpoint.png)
+
+## API Endpoint - 필터링
+![image.png](img/filtering.png)
