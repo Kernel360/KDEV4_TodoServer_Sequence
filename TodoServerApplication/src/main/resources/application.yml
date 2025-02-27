@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    show-sql: ture
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  sql:
+    init:
+      mode: always
+
+  datasource:
+    url: jdbc:h2:mem:development;MODE=MYSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
