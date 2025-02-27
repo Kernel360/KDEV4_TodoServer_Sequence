@@ -1,0 +1,12 @@
+1. JDK 11 설치
+JDK 구성 요소
+- JDK 는 JVM 을 포함하고 있는 JRE 와 Java Development Tool 을 포함하고 있습니다.
+- Java Development Tool 에는 컴파일러, 디버거와 같은 개발 도구 등이 포함되어 있다.
+- 또한 테무린 JDK 는 Hotspot JVM 을 사용하고 있는데 이는 일반적으로 가장 널리 사용되는 JVM 이다.
+
+톰캣
+- apache-tomcat-8.5.87 폴더 > bin > ./startup.bat 명령어 입력 해서 톰캣 실행 하기
+- ./shutdown.bat 명령어 입력 하면 중단
+- Servlet Interface(Spec) 구현체
+- Servlet Container 중 하나
+- Servlet Container 는 Servlet 의 라이프 사이클을 관리한다 라는 의미를 가진다
