@@ -1,0 +1,19 @@
+JSON 대표적으로 많이 쓰이는 형식
+- JSON 의 형태는 중괄호로 시작함
+- "key" : "value"
+- array 형태도 가질 수 있는데 이 배열 안에는 여러 가지 타입을 담을 수 있다 ( 반드시 타입은 동일해야 함 )
+- object 배열은 object 를 담을 수 있고 이 object 는 또 다시 JSON 을 담을 수 있다. ( 그리고 이 떄 반드시 데이터의 형태는 동일 해야 함 )
+
+JSON 표현하는 방식 2가지
+1. Snake case 방식
+- _로 구분을 한다
+user_name, user_age
+
+2. Camel case 방식
+- 첫 번째 시작은 소문자로 시작
+- 그리고 구분을 짓는 부분에 대문자로 구분한다
+userName , userAge
+
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class) 
+- 해당 클래스의 변수들은 SnakeCase 로 매핑하겠다 라는 것
+- 즉. 요청이 SnakeCase 로 들어오면 자동적으로 해당 변수에 매핑을 시켜주겠다
