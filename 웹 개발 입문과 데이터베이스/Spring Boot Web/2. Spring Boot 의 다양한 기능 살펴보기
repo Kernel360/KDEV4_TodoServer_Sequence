@@ -1,0 +1,8 @@
+Object Mapper
+- Object Mapper 란 스프링 부트에서 JSON 으로 전달되는 데이터를 역직렬화를 통해서 DTO 형태, 자바 클래스 형태로 바꿔주는 역할과
+  반대로 우리가 응답을 내릴 때 Object 즉,DTO 를 내리게 되면 직렬화를 통해서 JSON 으로 바꿔주는 역할을 하는 가운데서
+  가장 중요한 역할을 가지고 있는 애가 ObjectMapper 이다
+- Jackson 라이브러리 라고도 함
+- 구글에서 제공하는 GSON 라이브러리도 있음
+- 다양한 것들이 있는데 그 중에서 스프링 부트는 Jackson 에서 제공하는 Object Mapper 를 통해 기본적으로 Request Body 에 들어오는
+  JSON 내용을 DTO 로 바꿔주고 Response 가 내려갈 때 DTO 를 JSON 으로 바꿔주는 역할을 한다
