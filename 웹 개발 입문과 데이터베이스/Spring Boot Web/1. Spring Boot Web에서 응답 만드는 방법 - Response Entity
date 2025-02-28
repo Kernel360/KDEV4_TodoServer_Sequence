@@ -1,0 +1,27 @@
+Spring Boot Web 에서 응답을 만드는 방법
+1.String - Function 에서 Method 에서 리턴을 하는 경우 일반 plain Text Type 으로 응답이 내려가게 된다.
+2.Object - 자동으로 Json 으로 변환되어 응답 , 상태값( HTTP Status )은 항상 200 OK
+3.ResponseEntity - Body 의 내용을 Object 로 설정, 상황에 따라서 HttpStatus Code 설정
+4.@ResponseBody - RestController 가 아닌 곳 (Controller) 에서 Json 응답을 내릴 때
+
+- 우리가 프로젝트를 진행하다 보면 응답에 대해서 Status 코드를 여러가지로 내려줘야 할 때가 있다.
+- 우리가 생성을 했을 때는 201을 내려줄 때도 있고 또는 우리는 다른 Status 를 사용한다든지 또는 400 에러라든지 500이라든지 기타 코드를
+  활용하고 싶다라고 할 때 사용 하는 방법이 있음
+- 리턴되는 형태는 ResponseEntity 라는 클래스를 리턴을 할 것이다.
+
+- RestController 는 해당 컨트롤러는 REST API 로 동작하겠다 즉, 응답값이 JSON 으로 내려가겠다 라는 선언이다.
+- 그런데 Spring Boot 에는 반드시 JSON 응답만 있는게 아니고 HTML 응답도 내려줄 수 있다.
+- 그럴 때 사용하는 어노테이션이 @Controller 이다.
+
+@RequestMapping(path = "", method = RequestMethod.GET)
+- 메서드에도 RequestMapping 어노테이션을 사용해서 주소를 지정할 수 있다.
+- 마찬가지로 path 라고 해서 경로와 method 를 통해서 우리가 어떤 RequestMethod 를 매칭시키겠다 라고 선언 해 줄수 있음
+- 메서드에 RequestMapping 만 사용하면 GET 매핑, POST 매핑, PUT 매핑 모두 다 사용이 가능하기 때문에 RequestMapping 을 사용 하면
+  반드시 메서드를 지정해 주는게 좋고 명확하게 어떤 메서드를 받겠다 라고 지정을 해 주는게 좋다
+
+Contorller
+- Controller 가 리턴을 해 줄 때는 페이지 리소스도 리턴해 줄 수 있기 때문에 Controller 로 만약에 선언했다 라고 하면
+  메서드에 @ResponseBody 라고 어노테이션을 붙여줘야 함
+- @ResponseBody 이 어노테이션을 붙여주게 되면 Controller 어노테이션일 때 응답이 json 으로 내려가게 된다.
+- Controller 로 선언을 했는데 메서드에 @ResponseBody 어노테이션이 붙어 있지 않으면 404 에러가 떨어진다
+  그 이유는 UserRequest 에 해당되는 html 리소스를 찾아서 리턴하게끔 되어 있는데 그런게 없어서 에러가 뜸
