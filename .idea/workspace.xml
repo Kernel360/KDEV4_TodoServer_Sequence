@@ -5,46 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66b82762-d819-44d8-92d9-188591c8ad68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/build/resources/main/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/build/resources/main/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/build/resources/main/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/TodoServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/constants/TaskStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/model/TaskDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/model/TaskRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/persist/TaskRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/persist/entity/TaskEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/service/TaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/web/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/web/vo/ResultResponseVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/web/vo/TaskRequestVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/java/org/example/web/vo/TaskStatusRequestVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoServerApplication/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/TodoServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/TodoServerApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,13 +79,13 @@
   "keyToString": {
     "Application.TodoServerApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "eojin",
+    "git-widget-placeholder": "Merging eojin",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/eojin/Desktop/programming/projects/TodoServer",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
