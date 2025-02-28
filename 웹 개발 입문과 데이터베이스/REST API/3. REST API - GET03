@@ -1,0 +1,24 @@
+Query Parameter
+- 특정 정보의 필터링을 걸때 사용한다.
+- https://www.foo.bar/book?category=IT&issuedYear=2023&issued-month=01&issued_day=31
+- ? 로 시작하고( 이 이후로는 Query Parameter 부르는 애들이며 특정 정보에 필터링을 걸 때 사용 ),
+  이어주는 형태는 & 로 묶어준다 ( & 단위로 각각 내용이 존재한다 )
+
+Integer age 와 int age 는 차이가 있다
+- 레퍼런스 타입의 Integer 는 null 이 할당될 수 있다
+- 그리고 int 타입의 age 는 null 이 할당될 수 없고 default 가 0이다
+- Path variable 에는 어떤게 어울리까?? 주소이기 때문에 primitive 타입을 사용하는 것 추천
+                                    Integer 타입은 null 이라고 했는데 PathVariable 에는 null 이 들어올 수 없음
+
+/echo/{message}/age/{age}/is-man/{isMan}
+- is-man 주소는 대문자를 사용하지 않기 때문에 하이픈 사용
+- isMan 변수명이기 때문에 대문자 사용 해도 상관 없음
+
+
+QueryParameter 파싱 하는 방법
+1. 직접 수동으로 파싱하는 방법 -> @RequestParam 어노테이션 사용
+2. 객체를 통해 파싱하기 -> 아무런 어노테이션 사용 하지 않음
+
+
+GET 방식에 대해서 리소스를 취득할 때 데이터를 불러오기 위해서 데이터를 전달해야 한다
+이때 PATH Variable 로 전달하는 방법과 Query Parameter 로 전달하는 방법이 있다

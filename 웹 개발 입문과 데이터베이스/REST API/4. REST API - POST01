@@ -1,0 +1,37 @@
+POST METHOD
+- POST 방식은 리소스의 생성, 즉 추가를 의미한다
+- CRUD 중에 CREATE 에 해당하고 멱등성에는 해당 되지 않는다. ( 요청을 할 때마다 데이터가 생성되기 때문에 멱등하지 않는다 )
+- 계속해서 데이터를 변화시키기 때문에 안정성도 없다.
+
+POST METHOD 데이터 전달 방식
+- PATH Variable 가질 수 있다
+- Query Parameter 는 가질 수 있지만 특정 데이터의 필터링을 할 때 사용하기 때문에 적절하지 않다
+- DataBody 를 통해서 데이터를 전달할 수 있다
+
+DataBody
+- HTTP 통신에는 HTTP Header 라고 불리는 곳과 http Body 라고 불리는 곳이 있다.
+- HTTP Request Data 중에 HTTP Body 부분에 특정한 메시지( 문자로 이루어진 형태 )를 담을 수 있음
+  ( TEXT, HTML, JSON 등 문자로 이루어진 것들이 데이터로 들어 있다 )
+- 이렇게 HTTP BODY 로 데이터를 전달하게 되면 외부 주소에는 해당 데이터가 노출되지 않기 때문에 GET 방식 보다는 조금 더 안전하다
+- HTTP 요청을 할 때 BODY 부분에 데이터를 담는 방식 중 가장 많이 쓰는 방식인 JSON 을 넣는 방식에 대해 알아 볼 것이다
+
+- HTTP Header 에는 Content-Type 이라는 헤더 이름이 있다
+- 여기 내용으로는 내가 전달하는 내용이 어떠한 데이터라는 것을 설명하도록 되어 있다
+
+- @RequestBody 어노테이션은 Post 또는 Put 방식에서 HTTP Body 로 들어오는 데이터를 해당 객체에다가 데이터 클래스에 매핑을 해주겠다는 뜻
+
+JSON 데이터
+- 기본적으로 Key 와 Value 형태로 이루어진 데이터 형태이다.
+- key : value
+{
+    "key" : "value"
+}
+{
+  "name":"Spring Boot",
+  "number":"100",
+  "category":"JAVA"
+}
+- JSON 에서 다룰 수 있는 데이터는 기본적으로 String(문자), Number( 숫자 소숫점 포함 ), Boolean( true / false ),
+  {}(Object), [](array) 를 다룰 수 있다.
+- 한글 깨질 때 Help > VM Option
+

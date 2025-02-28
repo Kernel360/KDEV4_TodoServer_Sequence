@@ -10,4 +10,3 @@ JDK 구성 요소
 - Servlet Interface(Spec) 구현체
 - Servlet Container 중 하나
 - Servlet Container 는 Servlet 의 라이프 사이클을 관리한다 라는 의미를 가진다
---
