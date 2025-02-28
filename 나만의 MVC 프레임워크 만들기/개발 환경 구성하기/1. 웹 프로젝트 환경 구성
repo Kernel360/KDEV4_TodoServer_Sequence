@@ -1,0 +1,9 @@
+- WebApplicationServer 를 EmbeddedTomcat 을 이용해서 만들 것이다 ( EmbeddedTomcat 의존 추가 )
+
+- 또한 Java 를 이용해서 WebApplication 을 만들기 위해서는 Servlet 이 필요하다 ( WebApplication 의존 추가 )
+- Servlet 을 이용해서 프로그래밍을 할 때 화면을 통해서 확인하는 게 좀 더 편하다
+- JSP 를 이용해서 화면을 구성해보자
+
+- 톰캣은 루트 디렉토리 밑에 WEB-INF 밑에 classes 밑에서 자바 클래스를 찾기 때문이다
+- 따라서 루트 디렉토리 밑에 WEB-INF 밑에 classes 밑에 어떤 파일도 없으면 Tomcat 을 실행했을 때 해당 클래스를 절대 찾지 못함
+--
