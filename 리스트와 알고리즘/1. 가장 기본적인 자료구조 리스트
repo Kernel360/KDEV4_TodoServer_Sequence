@@ -1,0 +1,38 @@
+리스트
+- 자료를 순서대로 저장하는 자료구조 ( 자료를 메모리 상에서 어떻게 저장하고 있느냐, 관리하고 있느냐가 자료구조 라고 함
+                                리스트 라는 건 그 중에서 순서대로 저장을 하는 것이다.)
+- 앞의 것과 뒤에 것의 관계가 1대1 이라는 것이다.
+- 가장 단순하면서 가장 많이 사용되는 자료구조
+- 자료의 앞/뒤 순서가 있고, 물리적이나 논리적으로 선형(sequential) 구조임
+- 대부분의 언어에서 제공되는 자료구조
+
+리스트를 구현한 자료구조들
+1. 배열 리스트(ArrayList)
+- 동일한 자료를 한꺼번에 여러 개 만들 때 사용
+- 자료의 개수를 지정하고 물리적 순서와 논리적 순서가 동일
+- 구현이 비교적 쉬움, 가장 많이 씀
+2. 연결 리스트(LinkedList)
+- 배열 보다 좀 더 메모리를 효율적으로 사용하겠다 라고 했을 때 연결 리스트 씀
+- 전체 리스트의 크기가 동적으로 변화 함. 필요할 때마다 추가할 수 있음
+- 동적으로 할당을 받아서 자료를 관리
+- 매번 동적으로 할당을 받기 때문에 물리적인 순서와 논리적인 순서가 동일하지 않을 수 있음
+- 단점은 구현이 배열 리스트보다 복잡함
+
+리스트를 구현하는데 필요한 메서드들
+- 리스트의 생성 (create)
+- 리스트의 끝에 자료 추가하기 (append)
+- 리스트의 특정 위치(i 번째)의 자료 추가하거나 삭제하기 (add/remove) : 리스트는 순서가 중요하다
+- 리스트의 특정 위치(i 번째)의 자료 반환하기 (get)
+
+리스트 인터페이스 선언하기 ( 자바로 구현할거기 때문에 인터페이스 필요 )
+- ListInterface.java
+public interface ListInterface <E>{
+    public void insertElement(int i, E x);
+    public void addElement(E x);
+    public E removeElement(int i);
+    public E getElement(int i);
+    public int getSize();
+    public boolean isEmpty();
+    public void removeAll();
+    public void printAll();
+}

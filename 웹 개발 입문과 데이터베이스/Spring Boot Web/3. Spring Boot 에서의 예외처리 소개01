@@ -1,0 +1,21 @@
+Exception
+- 1. SpringBoot 는 인터넷으로부터 Request 요청이 들어오게 되면 처음에 필터 라는 구간을 통과하게 된다.
+- 2. 그리고 DispatcherServlet 이라는 곳을 도착하게 된다.
+- 3. 그리고 여기서 이제 Handler Mapping 을 통해서 어떠한 주소를 가진 Controller 에 매핑을 해야 되는지 결정을 한다.
+- 4. 이렇게 처리해야 할 주소와 해당 컨트롤러가 매칭이 되면 다음으로 Handler Interceptor 를 통과하게 된다.
+- 5. 이 구간(Handler Interceptor)을 지나게 되면 비로소 우리가 작성한 Controller 로 해당 Request 가 들어오게 된다.
+- 6. 그리고 우리는 여기서 여러가지 Service 로직 그리고 DB를 통한 데이터를 처리 하고 응답을 내리게 되면
+- 7. 다시 Handler Interceptor 를 통과하고 들어왔었던 구간(DispatcherServlet -> Filter -> Response )
+     다 통과를 해서 응답이 내려가는 형태로 구성이 된다
+- 그런데 우리가 이 Controller, Service 즉 비즈니스 로직을 처리하는 구간에서 예외가 발생하게 되면 Exception Handler 라는 곳이
+  해당 예외를 캐치 하게 되고 그 에러에 대한 응답을 만들어서 우리가 다시 한번 예외에 대한 처리에 응답을 내려줄 수 있다.
+
+정상적으로 처리가 되었을 때
+Controller, Service, DB -> Handler Interception -> DispatcherServlet -> Filter -> Response
+
+해당 로직을 처리하면서 예외가 발생하게 되었을 때
+Controller, Service, DB -> ExceptionHandler -> Handler Interception -> DispatcherServlet -> Filter -> Response
+
+
+@RestControllerAdvice
+- RestControllerAdvice 는 모든 컨트롤러에서 나오는 예외를 잡아준다.
