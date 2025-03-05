@@ -6,3 +6,16 @@ Object Mapper
 - 구글에서 제공하는 GSON 라이브러리도 있음
 - 다양한 것들이 있는데 그 중에서 스프링 부트는 Jackson 에서 제공하는 Object Mapper 를 통해 기본적으로 Request Body 에 들어오는
   JSON 내용을 DTO 로 바꿔주고 Response 가 내려갈 때 DTO 를 JSON 으로 바꿔주는 역할을 한다
+
+
+
+- Spring Boot 는 기본적으로 Object Mapper 가 동작하게 되고 POST 나 PUT 의 RequestBody 에 있는 JSON 형태의 데이터들을 DTO 에 가서
+  매핑을 해주는 역할을 한다.
+- POST Controller 를 보면 RequestBody 가 들어올 때는 이렇게 JSON 형태에서 DTO 로 바꿔줄 때는 역직렬화를 통해서 객체를 만들어주게 되고
+  리턴을 해서 객체를 리턴하게 되면 직렬화를 통해서 JSON 으로 바꿔주는 역할을 하는 게 Object Mapper 이다.
+- Read Value 할 때는 약간의 예외가 있다 즉, Setter 가 아닌 Getter 가 있더라도 동작을 하게 된다!!
+
+- 주의할 점은 Set 이라고 들어가게 되면 특정한 변수와 매핑하는 set 메서드가 호출이 된다라는 것을 기억해 주면 된다.
+- 결론적으로 readValue 즉, JSON 을 DTO 로 바꿀 때는 Setter 메서드를 참고하는데 Setter 메서드가 없다면 GET 메서드를 통해서도 세팅이
+  가능하다는 것을 우리는 알 수 있다.
+
